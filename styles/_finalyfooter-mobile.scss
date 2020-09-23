@@ -1,0 +1,68 @@
+.mas-info{
+    position: relative;
+    top: 3126px;
+    left: 0;
+    width: 100%;
+    height: 371px;
+    background-image: linear-gradient(225deg, $color-fondo1 0%, $color-fondo2 100%);
+    transform: skewY(-7deg);
+
+    h2{
+        position: absolute;
+        top: 64px;
+        width:288px;
+        height: 126px;
+        font-family: $fuente-titulos;
+        font-size: 36px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 42px;
+        font-weight: lighter;
+        transform: skewY(7deg);
+    }
+    .boton-aqua2{
+        @extend %boton-aqua;
+        top: 226px;
+        transform: skewY(7deg);
+        p{
+            left: 14vw;
+        }
+      
+    }
+}
+
+footer{
+    position: relative;
+    top: 3104px;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 125px; 
+    p{
+        @extend %subtitulo;
+        position: absolute;
+        top: 24px;
+        left: 14.6vw;
+        height: 22px;
+        width: 72vw;
+    }
+
+    .iconos-footer{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 65px;
+        left: 47px;
+        height: 28px;
+        width: 225px;
+
+        a{
+            text-decoration: none;
+            color:$color-fuentes;
+            &:checked{
+                color: inherit;
+            }
+        }
+    }
+}

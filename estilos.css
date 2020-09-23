@@ -1,0 +1,471 @@
+.titulo-principal, .historia h2, .invitados h2, .topicos h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  position: relative;
+  font-size: 36px;
+  color: #060A24;
+  font-weight: lighter;
+  letter-spacing: 0;
+  line-height: 42px; }
+
+.subtitulo, .historia p, footer p {
+  font-family: "IBM Plex Mono", monospace;
+  position: relative;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px; }
+
+.boton-aqua, .mas-info .boton-aqua2 {
+  position: relative;
+  background-color: #00F3BB;
+  width: 288px;
+  height: 48px; }
+  .boton-aqua p, .mas-info .boton-aqua2 p {
+    position: absolute;
+    color: #060A24;
+    font-size: 16px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    text-align: center;
+    top: 13px;
+    left: 96px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  left: 6vw; }
+
+body {
+  overflow-x: hidden; }
+  body header {
+    position: fixed;
+    width: 320px;
+    height: 44px;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background-color: #ffffff; }
+    body header img {
+      position: absolute;
+      top: 10px; }
+    body header .menu {
+      top: 44px;
+      max-height: 0;
+      width: 100%;
+      left: 0;
+      position: relative;
+      font-family: "IBM Plex Mono", monospace;
+      background-color: #0000EC;
+      color: white;
+      list-style: none;
+      transition: max-height .3s ease-out;
+      z-index: 2; }
+      body header .menu a {
+        visibility: hidden;
+        color: white;
+        text-decoration: none; }
+      body header .menu li {
+        position: relative;
+        height: 28px;
+        padding: 12px; }
+    body header .input-menu {
+      position: absolute;
+      top: 16px;
+      visibility: hidden;
+      left: 85vw; }
+      body header .input-menu:checked ~ .menu {
+        max-height: 224px; }
+        body header .input-menu:checked ~ .menu a {
+          visibility: visible; }
+      body header .input-menu:checked ~ .menu-hamburguesa .icono {
+        background: transparent; }
+      body header .input-menu:checked ~ .menu-hamburguesa .icono::before {
+        transform: rotate(-45deg);
+        top: 0; }
+      body header .input-menu:checked ~ .menu-hamburguesa .icono::after {
+        transform: rotate(45deg);
+        top: 0; }
+    body header .menu-hamburguesa {
+      position: relative;
+      top: 21px; }
+      body header .menu-hamburguesa .icono {
+        left: 82vw;
+        background-color: #060A24;
+        position: absolute;
+        display: block;
+        height: 2px;
+        width: 18px;
+        transition: background .2s ease-out; }
+        body header .menu-hamburguesa .icono::before {
+          background-color: #060A24;
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 100%;
+          content: "";
+          top: 3px;
+          transition: all .2s ease-out; }
+        body header .menu-hamburguesa .icono::after {
+          background-color: #060A24;
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 100%;
+          content: "";
+          top: -3px;
+          transition: all .2s ease-out; }
+
+@media screen and (min-width: 1000px) {
+  body header {
+    position: fixed;
+    width: 1440px;
+    height: 80px; }
+    body header img {
+      position: absolute;
+      top: 22px;
+      transform: scale(1.5); }
+    body header .menu {
+      top: 0;
+      background-color: white;
+      width: 550px; }
+      body header .menu li {
+        left: 59vw;
+        top: 2px;
+        float: left;
+        font-size: 16px;
+        padding: 24px; }
+        body header .menu li a {
+          visibility: visible;
+          color: #060A24; }
+          body header .menu li a:hover {
+            text-decoration: line-through;
+            color: #00F3BB; }
+          body header .menu li a:active {
+            text-decoration: line-through;
+            color: rgba(6, 10, 36, 0.56); }
+    body header .menu-hamburguesa, body header .input-menu {
+      display: none; } }
+.titulo-principal {
+  top: 73px;
+  left: 0;
+  width: 71vw;
+  display: flex;
+  flex-wrap: wrap; }
+  .titulo-principal .hello {
+    position: relative;
+    left: 16px; }
+  .titulo-principal .tachado {
+    position: relative;
+    text-decoration: line-through;
+    width: 31vw;
+    text-align: right; }
+  .titulo-principal .pale-blue-dot {
+    position: relative;
+    left: 16px; }
+  .titulo-principal .punto-azul {
+    position: relative;
+    left: 16px; }
+
+.subtitulo {
+  top: 95px;
+  right: 16px;
+  width: 288px; }
+  .subtitulo .subtitulo-desktop {
+    visibility: hidden; }
+
+.boton-aqua {
+  top: 40px; }
+
+@media screen and (min-width: 1000px) {
+  .titulo-principal {
+    top: 120px;
+    left: 14vw;
+    font-size: 64px;
+    letter-spacing: 0;
+    text-align: right; }
+    .titulo-principal .hello {
+      left: 0; }
+    .titulo-principal .tachado {
+      left: 8px;
+      width: 12vw; }
+    .titulo-principal .pale-blue-dot {
+      width: 391px; }
+    .titulo-principal .punto-azul {
+      left: 16px;
+      color: #0000EC; }
+
+  .subtitulo {
+    visibility: hidden; }
+    .subtitulo .subtitulo-desktop {
+      position: relative;
+      visibility: visible;
+      height: 48px;
+      width: 628px;
+      left: 8vw;
+      top: -10px;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 24px; }
+
+  .boton-aqua {
+    top: 139px;
+    left: 200px;
+    width: 226px;
+    height: 56px; }
+    .boton-aqua p {
+      font-size: 18px;
+      top: 16px;
+      left: 59px; }
+    .boton-aqua:hover {
+      background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
+      .boton-aqua:hover p {
+        color: #ffffff; } }
+.fondo-episodios {
+  width: 100%;
+  height: 1223.5px;
+  position: relative;
+  top: 83px;
+  left: 0;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  transform: skewY(-5deg); }
+  .fondo-episodios .titulo-episodios {
+    position: absolute;
+    top: 40px;
+    font-size: 36px;
+    color: white;
+    font-family: "IBM Plex Sans", sans-serif;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: normal;
+    transform: skewY(5deg); }
+  .fondo-episodios .flex-episodios {
+    position: relative;
+    left: 0;
+    top: 127px;
+    display: flex;
+    flex-wrap: wrap;
+    transform: skewY(5deg); }
+    .fondo-episodios .flex-episodios iframe {
+      width: 100%;
+      margin: 2.5vw;
+      max-width: 584px;
+      height: 232px; }
+
+.imagen-celular {
+  position: absolute;
+  top: 1260px;
+  left: -50vw;
+  transform: scale(0.5); }
+
+.historia {
+  position: relative;
+  top: 586px;
+  left: 0;
+  width: 288px; }
+  .historia p {
+    width: 272px;
+    top: 8px; }
+
+.invitados {
+  position: relative;
+  top: 626px;
+  left: 0; }
+  .invitados .flex-imagenes {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 98px;
+    left: 0; }
+    .invitados .flex-imagenes img {
+      width: 100%;
+      max-height: 364px;
+      left: 0; }
+
+@media screen and (min-width: 1000px) {
+  .fondo-episodios {
+    top: 165px;
+    height: 905px; }
+    .fondo-episodios .titulo-episodios {
+      top: 80px;
+      left: 14vw;
+      font-size: 48px;
+      font-weight: normal; }
+    .fondo-episodios .flex-episodios {
+      top: 160px;
+      justify-content: center; }
+
+  .imagen-celular {
+    transform: scale(0.65);
+    left: 5vw;
+    top: 1001px; }
+
+  .historia {
+    top: 253px;
+    left: 50vw;
+    width: 464px; }
+    .historia h2 {
+      left: 0;
+      font-size: 48px; }
+    .historia p {
+      left: 0;
+      top: 24px;
+      line-height: 24px;
+      font-size: 16px;
+      width: 464px; }
+
+  .invitados {
+    top: 611px; }
+    .invitados h2 {
+      font-size: 48px;
+      left: 14vw; }
+    .invitados .flex-imagenes {
+      top: 98px; }
+      .invitados .flex-imagenes img {
+        max-width: 33.3%; } }
+.topicos {
+  position: absolute;
+  top: 4118px;
+  left: 0; }
+  .topicos h2 {
+    width: 90vw;
+    height: 84px; }
+  .topicos .flex-topicos {
+    position: absolute;
+    width: 100%;
+    height: 849px;
+    top: 121px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap; }
+    .topicos .flex-topicos p {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 24px;
+      color: #060A24;
+      letter-spacing: 0;
+      font-weight: bolder;
+      width: 288px;
+      height: 64px;
+      text-align: center;
+      position: relative;
+      top: 13px; }
+    .topicos .flex-topicos img {
+      position: relative;
+      display: block;
+      margin: auto; }
+
+@media screen and (min-width: 1000px) {
+  .topicos {
+    top: 2937px; }
+    .topicos h2 {
+      font-size: 48px;
+      left: 14vw; }
+    .topicos .flex-topicos {
+      justify-content: center; }
+      .topicos .flex-topicos p {
+        width: 15vw; } }
+.mas-info {
+  position: relative;
+  top: 3126px;
+  left: 0;
+  width: 100%;
+  height: 371px;
+  background-image: linear-gradient(225deg, #0000EC 0%, #0000A3 100%);
+  transform: skewY(-7deg); }
+  .mas-info h2 {
+    position: absolute;
+    top: 64px;
+    width: 288px;
+    height: 126px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+    font-weight: lighter;
+    transform: skewY(7deg); }
+  .mas-info .boton-aqua2 {
+    top: 226px;
+    transform: skewY(7deg); }
+    .mas-info .boton-aqua2 p {
+      left: 14vw; }
+
+footer {
+  position: relative;
+  top: 3104px;
+  left: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 125px; }
+  footer p {
+    position: absolute;
+    top: 24px;
+    left: 14.6vw;
+    height: 22px;
+    width: 72vw; }
+  footer .iconos-footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 65px;
+    left: 47px;
+    height: 28px;
+    width: 225px; }
+    footer .iconos-footer a {
+      text-decoration: none;
+      color: #060A24; }
+      footer .iconos-footer a:checked {
+        color: inherit; }
+
+@media screen and (min-width: 1000px) {
+  .mas-info {
+    height: 470px;
+    top: 1993px;
+    transform: none; }
+    .mas-info:before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-image: inherit;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform-origin: top left;
+      transform: skewY(-5deg);
+      z-index: -1; }
+    .mas-info h2 {
+      transform: none;
+      width: 48vw;
+      font-size: 48px;
+      left: 26vw;
+      top: 80px; }
+    .mas-info .boton-aqua2 {
+      transform: none;
+      width: 24vw;
+      height: 56px;
+      left: 38vw; }
+      .mas-info .boton-aqua2 p {
+        font-size: 18px;
+        left: 4vw; }
+      .mas-info .boton-aqua2:hover {
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
+        .mas-info .boton-aqua2:hover p {
+          color: #ffffff; }
+
+  footer {
+    top: 1902px;
+    height: 95px; }
+    footer p {
+      top: 36px;
+      left: 7vw;
+      width: 20vw;
+      font-size: 16px; }
+    footer .iconos-footer {
+      left: 73vw;
+      font-size: 18px;
+      top: 36px; } }
+
+/*# sourceMappingURL=estilos.css.map */

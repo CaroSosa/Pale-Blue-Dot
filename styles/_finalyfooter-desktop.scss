@@ -1,0 +1,66 @@
+@media screen and (min-width:1000px){
+
+    .mas-info{
+        height: 470px;
+        top: 1993px;
+        transform: none;
+        &:before{
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background-image: inherit;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform-origin: top left;
+            transform: skewY(-5deg) ;
+            z-index: -1;
+        }
+
+        h2{
+            transform: none;
+            width: 48vw;
+            font-size: 48px;
+            left: 26vw;
+            top: 80px;
+        }
+
+        .boton-aqua2{
+            transform: none;
+            width: 24vw;
+            height: 56px;
+            left: 38vw;
+
+            p{
+                font-size: 18px;
+                left: 4vw;
+            }
+
+            &:hover{
+                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                p{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    footer{
+        top: 1902px;
+        height: 95px;
+
+        p{
+            top: 36px;
+            left: 7vw;
+            width: 20vw;
+            font-size: 16px;
+        }
+        .iconos-footer{
+            left: 73vw;
+            font-size: 18px;
+            top: 36px;
+        }
+    }
+}

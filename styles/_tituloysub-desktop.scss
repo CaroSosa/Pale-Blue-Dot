@@ -1,0 +1,66 @@
+@media screen and (min-width:1000px){
+
+ 
+    .titulo-principal{
+        top: 120px;
+        left: 14vw;
+        font-size: 64px;
+        letter-spacing: 0;
+        text-align: right;
+        
+        .hello{
+            left: 0;
+        }
+        
+        .tachado{
+            left:8px;
+            width: 12vw;
+        }
+        .pale-blue-dot{
+            width: 391px;
+        }
+        .punto-azul{
+            left: 16px;
+            color: $color-fondo1;
+        }
+        
+    }
+    .subtitulo{
+        visibility: hidden;
+
+        .subtitulo-desktop{
+            position: relative;
+            visibility: visible;
+            height:48px;
+            width: 628px;
+            left: 8vw;
+            top: -10px;
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 24px;
+        } 
+    }
+    .boton-aqua{
+        top: 139px;
+        left: 200px;
+        width: 226px;
+        height: 56px;
+    
+        p{
+            font-size: 18px;
+            top: 16px;
+            left: 59px;
+            
+        }
+        &:hover{
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            p{
+                color: #ffffff;
+            }
+        }
+    }
+
+
+
+
+}

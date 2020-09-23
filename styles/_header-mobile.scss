@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    left: 6vw;
+    
+}
+
+
+body{
+    overflow-x: hidden;
+
+    header{
+        position: fixed;
+        width: 320px;
+        height: 44px;
+        left: 0;
+        top: 0;
+        z-index: 5;
+        background-color: #ffffff;
+     
+        img{
+            position: absolute;
+            top: 10px;
+            
+        }
+
+        .menu{
+            top: 44px;
+            max-height: 0;
+            width: 100%;
+            left: 0;
+            position: relative;
+            font-family: $fuente-textos;
+            background-color: $color-fondo1 ;
+            color: white;
+            list-style: none;
+            transition:max-height .3s ease-out;
+            z-index: 2;
+            
+    
+            a{
+                visibility: hidden;
+                color: white;
+                text-decoration: none;
+            }
+            
+            li{
+                position: relative;
+                height: 28px;
+                padding: 12px;
+            }
+        }
+
+        .input-menu {
+            position: absolute;
+            top:16px;
+            visibility:hidden; 
+            left: 85vw;
+
+            &:checked ~ .menu{
+                max-height:224px;
+                a{ 
+                    visibility: visible;
+                }
+            }
+
+            &:checked ~ .menu-hamburguesa .icono{
+                background: transparent;
+            }
+
+            &:checked ~ .menu-hamburguesa .icono::before{
+                transform: rotate(-45deg);
+                top:0 ;
+            }
+
+            &:checked ~ .menu-hamburguesa .icono::after{
+                transform: rotate(45deg);
+                top: 0;
+            }
+        }
+
+        .menu-hamburguesa{
+            position: relative;
+            top: 21px;
+
+            .icono{
+                left: 82vw;
+                background-color: $color-fuentes;
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 18px;
+                transition: background .2s ease-out;
+                
+
+                &::before{
+                    background-color: $color-fuentes;
+                    position: absolute;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    content:"";
+                    top:3px;
+                    transition: all .2s ease-out;
+                }
+                
+                &::after{
+                    background-color: $color-fuentes;
+                    position: absolute;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    content:"";
+                    top:-3px;
+                    transition: all .2s ease-out;
+                    
+                }
+
+            }
+        }
+
+
+    }
+}
+

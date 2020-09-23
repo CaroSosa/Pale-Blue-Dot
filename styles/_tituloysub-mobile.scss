@@ -1,0 +1,55 @@
+
+
+
+.titulo-principal{
+    @extend %titulo;
+    top: 73px;
+    left: 0;
+    width: 71vw;
+    display: flex;
+    flex-wrap: wrap;
+
+        .hello{
+            position: relative;
+            left: 16px;
+        }
+
+        .tachado{
+            position: relative;
+            text-decoration: line-through;
+            width: 31vw;
+            text-align: right;
+        }
+        .pale-blue-dot{
+            position: relative;
+            left: 16px;
+        }
+
+        .punto-azul{
+            position: relative;
+            left: 16px;
+        }
+    
+}
+
+
+.subtitulo{
+    @extend %subtitulo;
+    top: 95px;
+    right: 16px;
+    width: 288px;
+    
+    
+
+    .subtitulo-desktop{
+        visibility: hidden;
+        
+    }
+    
+}
+
+.boton-aqua{
+    @extend %boton-aqua;
+    top:40px;
+}
+

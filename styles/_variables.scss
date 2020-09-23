@@ -1,0 +1,42 @@
+$fuente-titulos:'IBM Plex Sans', sans-serif;
+$fuente-textos:'IBM Plex Mono', monospace;
+$color-fondo1:#0000EC;
+$color-fondo2:  #0000A3;
+$color-fuentes: #060A24;
+$color-boton: #00F3BB;
+%titulo{
+    font-family: $fuente-titulos;
+    position: relative;
+    font-size: 36px;
+    color:$color-fuentes;
+    font-weight: lighter;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+%subtitulo{
+    font-family: $fuente-textos;
+    position: relative;
+    font-size: 14px;
+    color: $color-fuentes;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+%boton-aqua{
+    position: relative;
+    background-color: $color-boton;
+    width: 288px;
+    height: 48px;
+    
+    p{
+        position: absolute;
+        color: $color-fuentes;
+        font-size: 16px;
+        font-family: $fuente-textos;
+        font-weight: bold;
+        text-align: center;
+        top: 13px;
+        left: 96px;
+        
+    }
+}
+

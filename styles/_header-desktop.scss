@@ -1,0 +1,57 @@
+@media screen and (min-width:1000px){
+   
+
+
+    body{
+        
+        header{
+            position: fixed;
+            width: 1440px;
+            height: 80px;
+
+            img{
+                position: absolute;
+                top: 22px;
+                transform: scale(1.5);
+            }
+            
+            
+            .menu{
+                top: 0;
+                background-color: white;
+                width: 550px;
+                
+                
+                li{
+                    left:59vw;
+                    top: 2px;
+                    float: left;
+                    font-size: 16px;
+                    padding: 24px;
+               
+                
+                a{
+                    visibility: visible;
+                    color:$color-fuentes;
+                    &:hover{
+                        text-decoration: line-through;
+                        color: #00F3BB;
+                    }
+                    &:active{
+                        text-decoration: line-through;
+                        color: rgba(6,10,36,0.56);
+                    }
+                }
+
+                }
+
+            }
+
+            .menu-hamburguesa, .input-menu {
+                display: none;
+            }
+        }
+    }
+ 
+    
+}

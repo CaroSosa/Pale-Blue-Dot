@@ -1,0 +1,61 @@
+@media screen and (min-width:1000px){
+
+    .fondo-episodios{
+        top: 165px;
+        height: 905px;
+
+        .titulo-episodios{
+            top: 80px;
+            left: 14vw;
+            font-size: 48px;
+            font-weight: normal;
+        }
+
+        .flex-episodios{
+            top: 160px;
+            justify-content: center;
+        }
+    }
+
+    .imagen-celular{
+        transform: scale(0.65);
+        left: 5vw;
+        top: 1001px;
+    }
+
+    .historia{
+        top: 253px;
+        left: 50vw;
+        width: 464px;
+        h2{
+            left: 0;
+            font-size: 48px;
+        }
+        p{
+            left: 0;
+            top: 24px;
+            line-height: 24px;
+            font-size: 16px;
+            width: 464px;
+                
+        }
+    }
+       
+
+        .invitados{
+            top: 611px;
+
+            h2{
+                font-size: 48px;
+                left: 14vw;
+            }
+        
+            .flex-imagenes{
+                top: 98px;
+                img{
+                    max-width: 33.3%;
+                }
+            }
+        }
+
+}
